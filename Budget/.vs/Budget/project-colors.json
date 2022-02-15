@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5246afcb-2bde-44a6-88e5-6051b07838fc": {
+      "ProjectGuid": "5246afcb-2bde-44a6-88e5-6051b07838fc",
+      "DisplayName": "Budget",
+      "ColorIndex": 0
+    },
+    "847666c4-3d06-4aac-9959-7264f56fb464": {
+      "ProjectGuid": "847666c4-3d06-4aac-9959-7264f56fb464",
+      "DisplayName": "Budget.iOS",
+      "ColorIndex": 1
+    },
+    "01ad1606-3089-4031-a074-f5debfa676f0": {
+      "ProjectGuid": "01ad1606-3089-4031-a074-f5debfa676f0",
+      "DisplayName": "Budget.Android",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
