@@ -1,26 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Budget.Pages.ExpensesPage"
-             xmlns:vm="clr-namespace:Budget.ViewModels">
+<ContentPage
+    x:Class="Budget.Pages.ExpensesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:vm="clr-namespace:Budget.ViewModels">
 
     <ContentPage.BindingContext>
-        <vm:ExpensesPageModel/>
+        <vm:ExpensesPageModel />
     </ContentPage.BindingContext>
 
+    <ContentPage.Behaviors>
+        <community:EventToCommandBehavior Command="{Binding PageAppearCommand}" EventName="Appearing" />
+    </ContentPage.Behaviors>
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="add.png" Command="{Binding NewExpense}"/>
+        <ToolbarItem Command="{Binding NewExpense}" IconImageSource="add.png" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <CollectionView ItemsSource="{Binding Exenpses}">
-            <CollectionView.ItemTemplate>
+        <ListView ItemsSource="{Binding Exenpses}">
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout>
-                        <Label Text="{Binding Name}"/>
-                        <Label Text="{Binding Catergory}" FontSize="Small"/>
-                    </StackLayout>
+                    <TextCell Detail="{Binding Catergory}" Text="{Binding Name}" />
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

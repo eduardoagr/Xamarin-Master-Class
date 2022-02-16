@@ -3,6 +3,7 @@ using SQLite;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Budget.Model {
 
@@ -16,7 +17,7 @@ namespace Budget.Model {
         public float Ammount { get; set; }
 
         [MaxLength(25)]
-        public string Descriion { get; set; }
+        public string Description { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -39,6 +40,25 @@ namespace Budget.Model {
 
                 conn.CreateTable<Exenpse>();
                 return conn.Table<Exenpse>().ToList();
+            }
+        }
+
+        public static float TotalExpenseAmmount() {
+
+            using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
+
+                conn.CreateTable<Exenpse>();
+                return conn.Table<Exenpse>().ToList().Sum(e => e.Ammount);
+            }
+        }
+
+
+        public static List<Exenpse> GetExpenses(string Category) {
+
+            using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
+
+                conn.CreateTable<Exenpse>();
+                return conn.Table<Exenpse>().Where(e => e.Catergory == Category).ToList();
             }
         }
     }

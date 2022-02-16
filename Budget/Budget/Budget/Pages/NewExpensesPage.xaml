@@ -1,35 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+<rg:PopupPage
     x:Class="Budget.Pages.NewExpensesPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:vm="clr-namespace:Budget.ViewModels">
+    xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:icon="clr-namespace:DuoNotes.Fonts"
+    xmlns:rg="http://rotorgames.com"
+    xmlns:vm="clr-namespace:Budget.ViewModels"
+    AndroidTalkbackAccessibilityWorkaround="True">
 
-    <ContentPage.BindingContext>
+    <rg:PopupPage.BindingContext>
         <vm:NewExpensePageModel />
-    </ContentPage.BindingContext>
+    </rg:PopupPage.BindingContext>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding SaveCommand}" Text="save" />
-    </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        <StackLayout Margin="20">
-            <Entry
-                Placeholder="Expense name"
-                Style="{StaticResource EntryStyle}"
-                Text="{Binding Exenpse.Name}" />
-            <Entry
-                Keyboard="Numeric"
-                Placeholder="Ammount"
-                Style="{StaticResource EntryStyle}"
-                Text="{Binding Exenpse.Ammount, StringFormat='{0:C}'}" />
-            <Entry
-                MaxLength="35"
-                Placeholder="Short description"
-                Style="{StaticResource EntryStyle}"
-                Text="{Binding Exenpse.Descriion}" />
-            <DatePicker Date="{Binding Exenpse.Date}" />
-            <Picker ItemsSource="{Binding Categories}" SelectedIndex="{Binding Exenpse.Catergory}" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    <rg:PopupPage.Animation>
+        <rg:ScaleAnimation
+            DurationIn="700"
+            EasingIn="BounceOut"
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.7" />
+    </rg:PopupPage.Animation>
+
+    <StackLayout VerticalOptions="Center" 
+                 HorizontalOptions="Center">
+        <Label Text="vfdv[f"/>
+
+    </StackLayout>
+</rg:PopupPage>

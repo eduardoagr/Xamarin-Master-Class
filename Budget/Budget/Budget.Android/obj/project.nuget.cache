@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "d/s/e0lUB072Vxmh0TCpVcqCvuNWbzLBoXPlW1q6ekZtJpGJuHc67G69eekvdKiOsMt3oZaHvEmSzcVVgqiJ6Q==",
+  "dgSpecHash": "N3rbF++fDtWs+AP6IwtOQ0geLw9TYlmH5Z/DkRIvMQNl9kpIbRuJ3DmKEOm3Vdh10ikuKNAXuhCdhT97S4+NBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\egome\\source\\repos\\Xamarin-Master-Class\\Budget\\Budget\\Budget.Android\\Budget.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egome\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
@@ -68,6 +69,7 @@
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.8\\xamarin.androidx.versionedparcelable.1.1.1.8.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.0\\xamarin.communitytoolkit.2.0.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.essentials\\1.7.1\\xamarin.essentials.1.7.1.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms\\5.0.0.2337\\xamarin.forms.5.0.0.2337.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\xamarin.forms.visual.material\\5.0.0.2337\\xamarin.forms.visual.material.5.0.0.2337.nupkg.sha512",

@@ -19,12 +19,11 @@ namespace Budget.Droid {
             string db_name = "expense.db3";
             string folder_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string full_path = Path.Combine(folder_path, db_name);
-            System.Console.WriteLine($"this is the path {full_path}");
 
-            System.Console.WriteLine(full_path);
-
+            Rg.Plugins.Popup.Popup.Init(this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
 
 
             LoadApplication(new App(full_path));

@@ -14,7 +14,7 @@ namespace Budget.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\NewExpensesPage.xaml")]
-    public partial class NewExpensesPage : global::Xamarin.Forms.ContentPage {
+    public partial class NewExpensesPage : global::Rg.Plugins.Popup.Pages.PopupPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
