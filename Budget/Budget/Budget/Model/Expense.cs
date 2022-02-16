@@ -1,4 +1,6 @@
 ﻿
+using PropertyChanged;
+
 using SQLite;
 
 using System;
@@ -7,6 +9,7 @@ using System.Linq;
 
 namespace Budget.Model {
 
+    [AddINotifyPropertyChangedInterface]
     public class Exenpse {
 
         [PrimaryKey, AutoIncrement]

@@ -14,7 +14,6 @@ using Xamarin.Forms;
 
 namespace Budget.ViewModels {
 
-    [AddINotifyPropertyChangedInterface]
     public class NewExpensePageModel {
 
         public ICommand SaveCommand { get; set; }
@@ -37,14 +36,6 @@ namespace Budget.ViewModels {
 
             GetCategories();
 
-            Exenpse = new Exenpse() {
-                Name = Exenpse.Name,
-                Ammount = Exenpse.Ammount,
-                Description = Exenpse.Description,
-                Date = DateTime.Today,
-                Catergory = Exenpse.Catergory
-            };
-
         }
 
         private void CloseAction() {
@@ -66,7 +57,7 @@ namespace Budget.ViewModels {
             int response = Exenpse.InsertExpense(Exenpse);
 
             if (response > 0) {
-                Application.Current.MainPage.Navigation.PopAsync();
+                PopupNavigation.Instance.PopAsync();
             } else {
                 Application.Current.MainPage.DisplayAlert("Error", "No items were inserted", "OK");
             }

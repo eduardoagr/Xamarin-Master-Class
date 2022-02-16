@@ -1,31 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<rg:PopupPage
-    x:Class="Budget.Pages.NewExpensesPage"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:community="http://xamarin.com/schemas/2020/toolkit"
-    xmlns:icon="clr-namespace:DuoNotes.Fonts"
-    xmlns:rg="http://rotorgames.com"
-    xmlns:vm="clr-namespace:Budget.ViewModels"
-    AndroidTalkbackAccessibilityWorkaround="True">
+<rg:PopupPage x:Class="Budget.Pages.NewExpensesPage"
+              xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+              xmlns:icon="clr-namespace:DuoNotes.Fonts"
+              xmlns:rg="http://rotorgames.com"
+              xmlns:vm="clr-namespace:Budget.ViewModels"
+              AndroidTalkbackAccessibilityWorkaround="True">
 
     <rg:PopupPage.BindingContext>
         <vm:NewExpensePageModel />
     </rg:PopupPage.BindingContext>
 
-    <rg:PopupPage.Animation>
-        <rg:ScaleAnimation
-            DurationIn="700"
-            EasingIn="BounceOut"
-            PositionIn="Bottom"
-            PositionOut="Center"
-            ScaleIn="1"
-            ScaleOut="0.7" />
-    </rg:PopupPage.Animation>
+    <Frame Padding="0"
+           HorizontalOptions="CenterAndExpand"
+           IsClippedToBounds="True"
+           VerticalOptions="CenterAndExpand">
 
-    <StackLayout VerticalOptions="Center" 
-                 HorizontalOptions="Center">
-        <Label Text="vfdv[f"/>
+        <Frame HeightRequest="500"
+               WidthRequest="300">
+            <StackLayout>
+                <Label community:TouchEffect.Command="{Binding CloseComand}"
+                       Style="{StaticResource CloseButtoStyle}" />
+                <Label FontSize="Large"
+                       Text="New Expense" />
+                <DatePicker Date="{Binding Exenpse.Date}" />
+                <Entry Placeholder="Name"
+                       Style="{StaticResource EntryStyle}"
+                       Text="{Binding Exenpse.Name}" />
+                <Entry Placeholder="Description"
+                       Style="{StaticResource EntryStyle}"
+                       Text="{Binding Exenpse.Description}" />
+                <Entry Placeholder="Ammout"
+                       Style="{StaticResource EntryStyle}"
+                       Text="{Binding Exenpse.Ammount}" />
+                <Picker ItemsSource="{Binding Categories}" />
+                <Button Command="{Binding SaveCommand}"
+                        VerticalOptions="EndAndExpand"
+                        Visual="Material"
+                        Text="Save expense" />
+            </StackLayout>
+        </Frame>
 
-    </StackLayout>
+    </Frame>
 </rg:PopupPage>
