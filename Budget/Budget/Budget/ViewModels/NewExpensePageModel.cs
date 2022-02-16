@@ -1,6 +1,7 @@
 ﻿
 
 using Budget.Model;
+using Budget.Services;
 
 using PropertyChanged;
 
@@ -54,7 +55,7 @@ namespace Budget.ViewModels {
 
         private void SaveAction() {
 
-            int response = Exenpse.InsertExpense(Exenpse);
+            int response = Database.InsertExpense(Exenpse);
 
             if (response > 0) {
                 PopupNavigation.Instance.PopAsync();

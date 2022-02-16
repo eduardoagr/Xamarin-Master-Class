@@ -1,5 +1,6 @@
 ﻿using Budget.Model;
 using Budget.Pages;
+using Budget.Services;
 
 using Rg.Plugins.Popup.Services;
 
@@ -33,7 +34,7 @@ namespace Budget.ViewModels {
         }
 
         private void GetExpenses() {
-            var expense = Exenpse.GetExpenses();
+            var expense = Database.GetExpenses();
 
             Exenpses.Clear();
             foreach (var ex in expense) {

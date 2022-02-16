@@ -1,4 +1,5 @@
 ﻿using Budget.Model;
+using Budget.Services;
 
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -42,10 +43,10 @@ namespace Budget.ViewModels {
 
             CategoryExpenses.Clear();
 
-            float TotalExpemneAmmount = Exenpse.TotalExpenseAmmount();
+            float TotalExpemneAmmount = Database.TotalExpenseAmmount();
             foreach (var c in Categories) {
 
-                var expenses = Exenpse.GetExpenses(c);
+                var expenses = Database.GetExpenses(c);
                 var porcentageAmmount = expenses.Sum(e => e.Ammount);
 
                 CategoryExpenses ce = new CategoryExpenses() {

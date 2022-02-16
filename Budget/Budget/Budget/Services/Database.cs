@@ -2,13 +2,12 @@
 
 using SQLite;
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Budget.Services {
-    public class Dataabase {
+
+    public class Database {
 
         public static int InsertExpense(Exenpse exenpse) {
 
