@@ -15,54 +15,28 @@ namespace Budget.Model {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
+        [OnChangedMethod(nameof(Changed))]
         public string Name { get; set; }
 
+        [OnChangedMethod(nameof(Changed))]
         public float Ammount { get; set; }
 
+        [OnChangedMethod(nameof(Changed))]
         [MaxLength(25)]
         public string Description { get; set; }
 
+        [OnChangedMethod(nameof(Changed))]
         public DateTime Date { get; set; }
 
+        [OnChangedMethod(nameof(Changed))]
         public string Catergory { get; set; }
 
         public Exenpse() { }
 
-        public static int InsertExpense(Exenpse exenpse) {
+        public Action OnChanged { get; set; }
 
-            using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
-
-                conn.CreateTable<Exenpse>();
-                return conn.Insert(exenpse);
-            }
-        }
-
-        public static List<Exenpse> GetExpenses() {
-
-            using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
-
-                conn.CreateTable<Exenpse>();
-                return conn.Table<Exenpse>().ToList();
-            }
-        }
-
-        public static float TotalExpenseAmmount() {
-
-            using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
-
-                conn.CreateTable<Exenpse>();
-                return conn.Table<Exenpse>().ToList().Sum(e => e.Ammount);
-            }
-        }
-
-
-        public static List<Exenpse> GetExpenses(string Category) {
-
-            using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
-
-                conn.CreateTable<Exenpse>();
-                return conn.Table<Exenpse>().Where(e => e.Catergory == Category).ToList();
-            }
+        private void Changed() {
+            OnChanged.Invoke();
         }
     }
 }
