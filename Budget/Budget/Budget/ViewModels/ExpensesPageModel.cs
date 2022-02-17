@@ -2,9 +2,6 @@
 using Budget.Pages;
 using Budget.Services;
 
-using Rg.Plugins.Popup.Services;
-
-using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
@@ -43,7 +40,8 @@ namespace Budget.ViewModels {
         }
 
         private void NewExpenseAction() {
-            PopupNavigation.Instance.PushAsync(new NewExpensesPage());
+
+            Application.Current.MainPage.Navigation.PushModalAsync(new NewExpensePage());
         }
 
     }

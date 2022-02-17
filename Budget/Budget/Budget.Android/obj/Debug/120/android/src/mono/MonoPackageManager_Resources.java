@@ -6,7 +6,6 @@ public class MonoPackageManager_Resources {
 		"Budget.dll",
 		"FormsViewGroup.dll",
 		"PropertyChanged.dll",
-		"Rg.Plugins.Popup.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

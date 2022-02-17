@@ -1,13 +1,13 @@
+C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.csproj.AssemblyReference.cache
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Pages\CategoriesPage.xaml.g.cs
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Pages\ExpensesPage.xaml.g.cs
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Pages\HomePage.xaml.g.cs
-C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Pages\NewExpensesPage.xaml.g.cs
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.AssemblyInfoInputs.cache
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.AssemblyInfo.cs
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.csproj.CoreCompileInputs.cache
-C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.csproj.AssemblyReference.cache
+C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Pages\PopUp\NewExpensePage.xaml.g.cs
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.csproj.Fody.CopyLocal.cache
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Budget.dll
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\ref\Budget.dll
@@ -17,3 +17,4 @@ C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\bin\Debug\
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\bin\Debug\netstandard2.0\ref\Budget.dll
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\bin\Debug\netstandard2.0\Budget.pdb
 C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\egome\source\repos\Xamarin-Master-Class\Budget\Budget\Budget\obj\Debug\netstandard2.0\Pages\NewExpensePage.xaml.g.cs

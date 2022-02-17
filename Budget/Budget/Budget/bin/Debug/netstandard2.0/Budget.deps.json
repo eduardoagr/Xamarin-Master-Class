@@ -11,7 +11,6 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "PropertyChanged.Fody": "3.4.0",
-          "Rg.Plugins.Popup": "2.1.0",
           "Xamarin.CommunityToolkit": "2.0.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
@@ -37,17 +36,6 @@
           "lib/netstandard2.0/PropertyChanged.dll": {
             "assemblyVersion": "3.4.0.0",
             "fileVersion": "3.4.0.0"
-          }
-        }
-      },
-      "Rg.Plugins.Popup/2.1.0": {
-        "dependencies": {
-          "Xamarin.Forms": "5.0.0.2337"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Rg.Plugins.Popup.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
           }
         }
       },
@@ -245,13 +233,6 @@
       "sha512": "sha512-IAZyq0uolKo2WYm4mjx+q7A8fSGFT0x2e1s3y+ODn4JI0kqTDoo9GF2tdaypUzRFJZfdMxfC5HZW9QzdJLtOnA==",
       "path": "propertychanged.fody/3.4.0",
       "hashPath": "propertychanged.fody.3.4.0.nupkg.sha512"
-    },
-    "Rg.Plugins.Popup/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-caKjkvimzpUqk4pO/WSFn3uOX43uZNW5rPWCx7eXkOlGG9Br90MTwNVS1nxhtyypB69uUe/0GQPEC3rz+kscbA==",
-      "path": "rg.plugins.popup/2.1.0",
-      "hashPath": "rg.plugins.popup.2.1.0.nupkg.sha512"
     },
     "sqlite-net-pcl/1.8.116": {
       "type": "package",

@@ -8,8 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Budget.Model {
-
-    [AddINotifyPropertyChangedInterface]
     public class Exenpse {
 
         [PrimaryKey, AutoIncrement]
@@ -27,7 +25,5 @@ namespace Budget.Model {
         public string Catergory { get; set; }
 
         public Exenpse() { }
-
-        public Action OnChanged { get; set; }
     }
 }

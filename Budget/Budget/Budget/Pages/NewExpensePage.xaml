@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Budget.Pages.NewExpensePage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:vm="clr-namespace:Budget.ViewModels">
+
+    <ContentPage.BindingContext>
+        <vm:NewExpenssPageModel />
+    </ContentPage.BindingContext>
+
+
+    <Frame Padding="10"
+           IsClippedToBounds="True"
+           HasShadow="True"
+           BorderColor="Black">
+        <StackLayout>
+            <Label x:Name="CloseBton"
+                   Style="{StaticResource CloseButtoStyle}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="Close" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="New expense" />
+            <DatePicker Date="{Binding Exenpse.Date}" />
+            <Entry Text="{Binding Exenpse.Name}"
+                   Placeholder="Nme" />
+            <Entry Text="{Binding Exenpse.Description}"
+                   Placeholder="Description" />
+            <Entry Text="{Binding Exenpse.Ammount}"
+                   Placeholder="Ammount" />
+            <Picker ItemsSource="{Binding Categories}"
+                    SelectedItem="{Binding Exenpse.Catergory}" />
+            <Button Text="Save" />
+        </StackLayout>
+
+    </Frame>
+</ContentPage>

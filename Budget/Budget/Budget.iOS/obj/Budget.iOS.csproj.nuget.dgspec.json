@@ -42,10 +42,6 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
-            "Rg.Plugins.Popup": {
-              "target": "Package",
-              "version": "[2.1.0, )"
-            },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -126,10 +122,6 @@
             "PropertyChanged.Fody": {
               "target": "Package",
               "version": "[3.4.0, )"
-            },
-            "Rg.Plugins.Popup": {
-              "target": "Package",
-              "version": "[2.1.0, )"
             },
             "Xamarin.CommunityToolkit": {
               "target": "Package",

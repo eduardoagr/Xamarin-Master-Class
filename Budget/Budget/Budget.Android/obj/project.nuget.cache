@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "N3rbF++fDtWs+AP6IwtOQ0geLw9TYlmH5Z/DkRIvMQNl9kpIbRuJ3DmKEOm3Vdh10ikuKNAXuhCdhT97S4+NBA==",
+  "dgSpecHash": "vSiqhmeDUIBh0YZ9XExVeI6SGf6fnnneWldP9IK+MKxiV1EFd8WwvWbGLzyTkyLWDBQdQq4TRj7ysF3MY9+soQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\egome\\source\\repos\\Xamarin-Master-Class\\Budget\\Budget\\Budget.Android\\Budget.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egome\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
-    "C:\\Users\\egome\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",

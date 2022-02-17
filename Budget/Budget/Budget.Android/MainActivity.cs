@@ -20,7 +20,6 @@ namespace Budget.Droid {
             string folder_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string full_path = Path.Combine(folder_path, db_name);
 
-            Rg.Plugins.Popup.Popup.Init(this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
