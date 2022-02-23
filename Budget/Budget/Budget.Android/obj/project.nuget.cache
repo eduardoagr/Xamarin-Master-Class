@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vSiqhmeDUIBh0YZ9XExVeI6SGf6fnnneWldP9IK+MKxiV1EFd8WwvWbGLzyTkyLWDBQdQq4TRj7ysF3MY9+soQ==",
+  "dgSpecHash": "VpCQZkKEPQRyE+Uesz9Npp3DFOjxXLTeB8e+qIKhFVsZD7+KitrBvrCkc8szW1BQJqpTrI/xt+hwyeIWLdSuaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\egome\\source\\repos\\Xamarin-Master-Class\\Budget\\Budget\\Budget.Android\\Budget.Android.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,9 @@
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.4\\sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\syncfusion.licensing\\19.4.0.53\\syncfusion.licensing.19.4.0.53.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\syncfusion.xamarin.core\\19.4.0.53\\syncfusion.xamarin.core.19.4.0.53.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\syncfusion.xamarin.sfnumerictextbox\\19.4.0.53\\syncfusion.xamarin.sfnumerictextbox.19.4.0.53.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

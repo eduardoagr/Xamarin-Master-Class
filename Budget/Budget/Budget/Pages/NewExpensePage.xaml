@@ -1,37 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="Budget.Pages.NewExpensePage"
-             xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:community="http://xamarin.com/schemas/2020/toolkit"
-             xmlns:vm="clr-namespace:Budget.ViewModels">
+<ContentPage
+    x:Class="Budget.Pages.NewExpensePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:syncfusion="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"
+    xmlns:vm="clr-namespace:Budget.ViewModels">
 
     <ContentPage.BindingContext>
         <vm:NewExpenssPageModel />
     </ContentPage.BindingContext>
 
 
-    <Frame Padding="10"
-           IsClippedToBounds="True"
-           HasShadow="True"
-           BorderColor="Black">
+    <Frame
+        Padding="10"
+        BorderColor="Black"
+        HasShadow="True"
+        IsClippedToBounds="True">
         <StackLayout>
-            <Label x:Name="CloseBton"
-                   Style="{StaticResource CloseButtoStyle}">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer x:Name="Close" />
-                </Label.GestureRecognizers>
-            </Label>
+            <Label
+                x:Name="CloseBton"
+                community:TouchEffect.Command="{Binding DissmissCommand}"
+                Style="{StaticResource CloseButtoStyle}" />
             <Label Text="New expense" />
             <DatePicker Date="{Binding Exenpse.Date}" />
-            <Entry Text="{Binding Exenpse.Name}"
-                   Placeholder="Nme" />
-            <Entry Text="{Binding Exenpse.Description}"
-                   Placeholder="Description" />
-            <Entry Text="{Binding Exenpse.Ammount}"
-                   Placeholder="Ammount" />
-            <Picker ItemsSource="{Binding Categories}"
-                    SelectedItem="{Binding Exenpse.Catergory}" />
-            <Button Text="Save" />
+            <Entry Placeholder="Nme" Text="{Binding Exenpse.Name}" />
+            <Entry Placeholder="Description" Text="{Binding Exenpse.Description}" />
+            <syncfusion:SfNumericTextBox
+                AllowNull="true"
+                Visual="Material"
+                Watermark="Enter value"
+                Value="{Binding Exenpse.Ammount}" FormatString="c"/>
+            <Picker ItemsSource="{Binding Categories}" SelectedItem="{Binding Exenpse.Catergory}" />
+            <Button
+                Command="{Binding SaveCommand}"
+                CommandParameter="{Binding Exenpse}"
+                Text="Save"
+                VerticalOptions="EndAndExpand" />
         </StackLayout>
 
     </Frame>

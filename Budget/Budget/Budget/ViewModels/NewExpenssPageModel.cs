@@ -1,21 +1,24 @@
 ﻿using Budget.Model;
+using Budget.Services;
 
-using System;
+using PropertyChanged;
+
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 
 using Xamarin.Forms;
 
 namespace Budget.ViewModels {
+
+    [AddINotifyPropertyChangedInterface]
     public class NewExpenssPageModel {
 
         public Exenpse Exenpse { get; set; }
 
         public ObservableCollection<string> Categories { get; set; }
 
-        public ICommand DissmissCommand { get; set; }
+        public Command DissmissCommand { get; set; }
 
-        public ICommand SaveCommand { get; set; }
+        public Command SaveCommand { get; set; }
 
         public NewExpenssPageModel() {
 
@@ -27,8 +30,24 @@ namespace Budget.ViewModels {
             Exenpse = new Exenpse();
         }
 
+
         private void SaveContentCommand() {
-            throw new NotImplementedException();
+
+            if (string.IsNullOrEmpty(Exenpse.Name)
+                && string.IsNullOrEmpty(Exenpse.Description)
+                && Exenpse.Ammount <= 0
+                && string.IsNullOrEmpty(Exenpse.Catergory)) {
+
+                Application.Current.MainPage.DisplayAlert("Error", "Please filled out your expense", "OK");
+
+            } else {
+                var res = Database.InsertExpense(Exenpse);
+                if (res > 0) {
+                    App.Current.MainPage.Navigation.PopModalAsync();
+                }
+            }
+
+
         }
 
         private void CloseWindow() {
@@ -42,6 +61,7 @@ namespace Budget.ViewModels {
             Categories.Add("Heath");
             Categories.Add("Food");
             Categories.Add("Travel");
+            Categories.Add("Recreation");
             Categories.Add("Other");
         }
     }

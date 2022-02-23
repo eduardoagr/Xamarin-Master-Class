@@ -1,31 +1,33 @@
-﻿using Budget.Model;
+﻿using Budget.Interfaces;
+using Budget.Model;
 using Budget.Services;
 
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Windows.Input;
 
 using Xamarin.Forms;
 
 namespace Budget.ViewModels {
     public class CategoryPageModel {
 
-        public ICommand PageAppearCommand { get; set; }
+        public Command PageAppearCommand { get; set; }
 
         public ObservableCollection<string> Categories { get; set; }
 
         public ObservableCollection<CategoryExpenses> CategoryExpenses { get; set; }
 
+        public Command ExportCommand { get; set; }
+
         public CategoryPageModel() {
 
+            ExportCommand = new Command(ShareReport);
             Categories = new ObservableCollection<string>();
             CategoryExpenses = new ObservableCollection<CategoryExpenses>();
             PageAppearCommand = new Command(AppearAction);
+            GetCategories();
         }
 
         private void AppearAction() {
-
-            GetCategories();
             ExpensePerCategory();
         }
 
@@ -36,6 +38,7 @@ namespace Budget.ViewModels {
             Categories.Add("Heath");
             Categories.Add("Food");
             Categories.Add("Travel");
+            Categories.Add("Recreation");
             Categories.Add("Other");
         }
 
@@ -58,5 +61,11 @@ namespace Budget.ViewModels {
             }
         }
 
+        public void ShareReport() {
+
+            var share = DependencyService.Get<IShare>();
+
+            share.Show("", "", "");
+        }
     }
 }

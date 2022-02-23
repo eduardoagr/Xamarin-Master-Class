@@ -2,17 +2,18 @@
 using Budget.Pages;
 using Budget.Services;
 
+using PropertyChanged;
+
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 
 using Xamarin.Forms;
 
 namespace Budget.ViewModels {
     public class ExpensesPageModel {
 
-        public ICommand PageAppearCommand { get; set; }
+        public Command PageAppearCommand { get; set; }
 
-        public ICommand NewExpense { get; set; }
+        public Command NewExpense { get; set; }
 
         public ObservableCollection<Exenpse> Exenpses { get; set; }
 
@@ -23,7 +24,6 @@ namespace Budget.ViewModels {
             NewExpense = new Command(NewExpenseAction);
 
             PageAppearCommand = new Command(AppearAction);
-
         }
 
         private void AppearAction() {
@@ -43,6 +43,5 @@ namespace Budget.ViewModels {
 
             Application.Current.MainPage.Navigation.PushModalAsync(new NewExpensePage());
         }
-
     }
 }

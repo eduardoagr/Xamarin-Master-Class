@@ -26,22 +26,28 @@ application_config:
 	.byte	0
 	/* have_runtime_config_blob */
 	.byte	0
+	/* have_assembly_store */
+	.byte	0
 	/* bound_exception_type */
 	.byte	1
 	/* package_naming_policy */
-	.zero	3
+	.zero	2
 	.word	3
 	/* environment_variable_count */
 	.word	12
 	/* system_property_count */
 	.word	0
 	/* number_of_assemblies_in_apk */
-	.word	96
+	.word	110
 	/* bundled_assembly_name_width */
 	.word	63
+	/* number_of_assembly_store_files */
+	.word	2
+	/* mono_components_mask */
+	.word	0
 	/* android_package_name */
 	.xword	.L.env.str.1
-	.size	application_config, 40
+	.size	application_config, 48
 	.section	.rodata.env.str.2,"aMS",@progbits,1
 	.type	.L.env.str.2, @object
 .L.env.str.2:
@@ -79,7 +85,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"330e4602-7751-4c0c-b277-bc52197e73a7"
+	.asciz	"4b4d1617-25d2-4e41-b767-720c8960fcd9"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
@@ -135,6 +141,7 @@ app_environment_variables:
 	.global	app_system_properties
 app_system_properties:
 	.size	app_system_properties, 0
+
 	/* Bundled assembly name buffers, all 63 bytes long */
 	.section	.bss.bundled_assembly_names,"aw",@nobits
 .L.env.buf.1:
@@ -329,6 +336,35 @@ app_system_properties:
 	.zero	63
 .L.env.buf.96:
 	.zero	63
+.L.env.buf.97:
+	.zero	63
+.L.env.buf.98:
+	.zero	63
+.L.env.buf.99:
+	.zero	63
+.L.env.buf.100:
+	.zero	63
+.L.env.buf.101:
+	.zero	63
+.L.env.buf.102:
+	.zero	63
+.L.env.buf.103:
+	.zero	63
+.L.env.buf.104:
+	.zero	63
+.L.env.buf.105:
+	.zero	63
+.L.env.buf.106:
+	.zero	63
+.L.env.buf.107:
+	.zero	63
+.L.env.buf.108:
+	.zero	63
+.L.env.buf.109:
+	.zero	63
+.L.env.buf.110:
+	.zero	63
+
 	/* Bundled assemblies data */
 	.section	.data.bundled_assemblies,"aw",@progbits
 	.type	bundled_assemblies, @object
@@ -1775,4 +1811,229 @@ bundled_assemblies:
 	.zero	4
 	.xword	.L.env.buf.96
 
-	.size	bundled_assemblies, 3840
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.97
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.98
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.99
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.100
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.101
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.102
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.103
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.104
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.105
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.106
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.107
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.108
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.109
+
+	/* apk_fd */
+	.word	-1
+	/* data_offset */
+	.word	0
+	/* data_size */
+	.word	0
+	/* data */
+	.zero	4
+	.xword	0
+	/* name_length */
+	.word	0
+	/* name */
+	.zero	4
+	.xword	.L.env.buf.110
+
+	.size	bundled_assemblies, 4400
+
+
+	/* Assembly store individual assembly data */
+	.section	.data.assembly_store_bundled_assemblies,"aw",@progbits
+	.type	assembly_store_bundled_assemblies, @object
+	.p2align	3
+	.global	assembly_store_bundled_assemblies
+assembly_store_bundled_assemblies:
+
+	/* Assembly store data */
+	.section	.data.assembly_stores,"aw",@progbits
+	.type	assembly_stores, @object
+	.p2align	3
+	.global	assembly_stores
+assembly_stores:

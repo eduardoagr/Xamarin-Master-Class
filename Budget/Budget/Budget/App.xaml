@@ -1,30 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application x:Class="Budget.App"
-             xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:icon="clr-namespace:DuoNotes.Fonts">
+<Application
+    x:Class="Budget.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:icon="clr-namespace:DuoNotes.Fonts">
 
     <Application.Resources>
         <ResourceDictionary>
             <Style TargetType="Entry">
-                <Setter Property="Visual"
-                        Value="Material" />
+                <Setter Property="Visual" Value="Material" />
             </Style>
 
-            <Style x:Key="CloseButtoStyle"
-                   TargetType="Label">
-                <Setter Property="WidthRequest"
-                        Value="30" />
-                <Setter Property="HeightRequest"
-                        Value="30" />
-                <Setter Property="TextColor"
-                        Value="Red" />
-                <Setter Property="FontFamily"
-                        Value="ma" />
-                <Setter Property="HorizontalTextAlignment"
-                        Value="End" />
-                <Setter Property="Text"
-                        Value="{Static icon:MaterialIcons.CloseCircle}" />
+            <Style TargetType="Button">
+                <Setter Property="Visual" Value="Material" />
+            </Style>
+
+            <Style x:Key="CloseButtoStyle" TargetType="Label">
+                <Setter Property="WidthRequest" Value="60" />
+                <Setter Property="HeightRequest" Value="60" />
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="FontFamily" Value="ma" />
+                <Setter Property="HorizontalTextAlignment" Value="End" />
+                <Setter Property="Text" Value="{Static icon:MaterialIcons.CloseCircle}" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

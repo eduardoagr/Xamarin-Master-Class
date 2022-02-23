@@ -11,6 +11,8 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "PropertyChanged.Fody": "3.4.0",
+          "Syncfusion.Licensing": "19.4.0.53",
+          "Syncfusion.Xamarin.SfNumericTextBox": "19.4.0.53",
           "Xamarin.CommunityToolkit": "2.0.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
@@ -83,6 +85,38 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {
             "assemblyVersion": "2.0.4.976",
             "fileVersion": "2.0.4.976"
+          }
+        }
+      },
+      "Syncfusion.Licensing/19.4.0.53": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.4.0.53",
+            "fileVersion": "19.4.0.53"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/19.4.0.53": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.4.0.53",
+          "Xamarin.Forms": "5.0.0.2337"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "19.4451.0.53",
+            "fileVersion": "19.4451.0.53"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericTextBox/19.4.0.53": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.53",
+          "Xamarin.Forms": "5.0.0.2337"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.dll": {
+            "assemblyVersion": "19.4451.0.53",
+            "fileVersion": "19.4451.0.53"
           }
         }
       },
@@ -268,6 +302,27 @@
       "sha512": "sha512-YiqCw+PfiPIuX2aZnEqt1ya5ldGm4ParIqzaRXtztDu8mdzZxOXVYOrKZazXg6nbwYbCP1H5mOYGmBFQ2W0M5g==",
       "path": "sqlitepclraw.provider.e_sqlite3/2.0.4",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.4.0.53": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V7eVfg0Ohx5/I9OaH3obiYzoyiuiz2Kb40tYOlcJon58Y0Srgp5BFfvIKnmYsuSoIQ6CZX2YR7j0jzFocb1EKg==",
+      "path": "syncfusion.licensing/19.4.0.53",
+      "hashPath": "syncfusion.licensing.19.4.0.53.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/19.4.0.53": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-phAVZeTPBOFzJ/XPMIaZGoz/fLVRIle9GD63j4Z5GByT/fqg5JHZ1/Vh3lG66FydL2X4To4l427S4WVdhc/Nkw==",
+      "path": "syncfusion.xamarin.core/19.4.0.53",
+      "hashPath": "syncfusion.xamarin.core.19.4.0.53.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfNumericTextBox/19.4.0.53": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iKKsuE39uROc1F9JhENAFafBP/5w9M2fzlJk/dMb1gdMja86yD1ySM7FR3T/0TNueTq3dt1Gu3lj3iTrIHkEIw==",
+      "path": "syncfusion.xamarin.sfnumerictextbox/19.4.0.53",
+      "hashPath": "syncfusion.xamarin.sfnumerictextbox.19.4.0.53.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",

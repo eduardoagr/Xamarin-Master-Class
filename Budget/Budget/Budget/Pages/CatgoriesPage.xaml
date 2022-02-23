@@ -1,31 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Budget.Pages.CatgoriesPage"
-             xmlns:vm="clr-namespace:Budget.ViewModels"
-             xmlns:community="http://xamarin.com/schemas/2020/toolkit">
+<ContentPage
+    x:Class="Budget.Pages.CatgoriesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:icon="clr-namespace:DuoNotes.Fonts"
+    xmlns:vm="clr-namespace:Budget.ViewModels">
 
     <ContentPage.BindingContext>
         <vm:CategoryPageModel />
     </ContentPage.BindingContext>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding ExportCommand}">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource
+                    FontFamily="ma"
+                    Glyph="{Static icon:MaterialIcons.FileExport}"
+                    Size="Large" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Behaviors>
-        <community:EventToCommandBehavior Command="{Binding PageAppearCommand}"
-                                          EventName="Appearing" />
+        <community:EventToCommandBehavior Command="{Binding PageAppearCommand}" EventName="Appearing" />
     </ContentPage.Behaviors>
 
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding CategoryExpenses}">
-            <ListView.ItemTemplate>
+        <CollectionView ItemsSource="{Binding CategoryExpenses}" SelectionMode="Single">
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Margin="20">
-                            <Label Text="{Binding Category}" />
-                            <ProgressBar Progress="{Binding Porcentage}" />
-                        </StackLayout>
-                    </ViewCell>
+                    <StackLayout Padding="10">
+                        <Label Text="{Binding Category}" />
+                        <ProgressBar Progress="{Binding Porcentage}" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="White" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="#E6E6E6E6" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </StackLayout>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </ContentPage.Content>
 </ContentPage>

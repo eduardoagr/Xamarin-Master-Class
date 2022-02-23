@@ -85,6 +85,47 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "Syncfusion.Licensing/19.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/19.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "19.4.0.53",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericTextBox/19.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.53",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
+        }
+      },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
@@ -1690,6 +1731,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "PropertyChanged.Fody": "3.4.0",
+          "Syncfusion.Licensing": "19.4.0.53",
+          "Syncfusion.Xamarin.SfNumericTextBox": "19.4.0.53",
           "Xamarin.CommunityToolkit": "2.0.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
@@ -1829,6 +1872,113 @@
         "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/19.4.0.53": {
+      "sha512": "V7eVfg0Ohx5/I9OaH3obiYzoyiuiz2Kb40tYOlcJon58Y0Srgp5BFfvIKnmYsuSoIQ6CZX2YR7j0jzFocb1EKg==",
+      "type": "package",
+      "path": "syncfusion.licensing/19.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0-windows10.0/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.19.4.0.53.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/19.4.0.53": {
+      "sha512": "phAVZeTPBOFzJ/XPMIaZGoz/fLVRIle9GD63j4Z5GByT/fqg5JHZ1/Vh3lG66FydL2X4To4l427S4WVdhc/Nkw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/19.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ClearButtonViewVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.19.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfNumericTextBox/19.4.0.53": {
+      "sha512": "iKKsuE39uROc1F9JhENAFafBP/5w9M2fzlJk/dMb1gdMja86yD1ySM7FR3T/0TNueTq3dt1Gu3lj3iTrIHkEIw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfnumerictextbox/19.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.SfNumericTextBox.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfNumericTextBox.Android.xml",
+        "lib/MonoAndroid90/Syncfusion.SfNumericTextBox.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.iOS.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.iOS.dll",
+        "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "syncfusion.xamarin.sfnumerictextbox.19.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfnumerictextbox.nuspec",
+        "syncfusion_logo.png"
       ]
     },
     "System.Buffers/4.4.0": {
@@ -3575,6 +3725,8 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v12.0": [
       "Budget >= 1.0.0",
+      "Syncfusion.Licensing >= 19.4.0.53",
+      "Syncfusion.Xamarin.SfNumericTextBox >= 19.4.0.53",
       "Xamarin.CommunityToolkit >= 2.0.0",
       "Xamarin.Essentials >= 1.7.1",
       "Xamarin.Forms >= 5.0.0.2337",
@@ -3623,6 +3775,14 @@
     "frameworks": {
       "monoandroid12.0": {
         "dependencies": {
+          "Syncfusion.Licensing": {
+            "target": "Package",
+            "version": "[19.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfNumericTextBox": {
+            "target": "Package",
+            "version": "[19.4.0.53, )"
+          },
           "Xamarin.CommunityToolkit": {
             "target": "Package",
             "version": "[2.0.0, )"

@@ -1,29 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="Budget.Pages.ExpensesPage"
-             xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:community="http://xamarin.com/schemas/2020/toolkit"
-             xmlns:vm="clr-namespace:Budget.ViewModels">
+<ContentPage
+    x:Class="Budget.Pages.ExpensesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:community="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:icon="clr-namespace:DuoNotes.Fonts"
+    xmlns:vm="clr-namespace:Budget.ViewModels">
 
     <ContentPage.BindingContext>
         <vm:ExpensesPageModel />
     </ContentPage.BindingContext>
 
+
     <ContentPage.Behaviors>
-        <community:EventToCommandBehavior Command="{Binding PageAppearCommand}"
-                                          EventName="Appearing" />
+        <community:EventToCommandBehavior Command="{Binding PageAppearCommand}" EventName="Appearing" />
     </ContentPage.Behaviors>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding NewExpense}"
-                     IconImageSource="add.png" />
+        <ToolbarItem Command="{Binding NewExpense}">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource
+                    FontFamily="ma"
+                    Glyph="{Static icon:MaterialIcons.Plus}"
+                    Size="Large" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
+
+
+
     <ContentPage.Content>
         <ListView ItemsSource="{Binding Exenpses}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding Catergory}"
-                              Text="{Binding Name}" />
+                    <TextCell Detail="{Binding Catergory}" Text="{Binding Name}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VoA/NYSByLuOJGLJOBRwV+t0pJW0q1aaSvi+aMp11x/inTqb8EoB/pkTYEEiyeZSzMmKBxGF2RjVcJot39qQ+A==",
+  "dgSpecHash": "9QVBkjxt4GqY87K+xHkPUxM50cAtpR0Fil5dRLlC/ew9zCAnDGJxBY0m4JVkP4hUMRaiUIZjcT3aKAxGPWIsiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\egome\\source\\repos\\Xamarin-Master-Class\\Budget\\Budget\\Budget.iOS\\Budget.iOS.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\syncfusion.licensing\\19.4.0.53\\syncfusion.licensing.19.4.0.53.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\syncfusion.xamarin.core\\19.4.0.53\\syncfusion.xamarin.core.19.4.0.53.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\syncfusion.xamarin.sfnumerictextbox\\19.4.0.53\\syncfusion.xamarin.sfnumerictextbox.19.4.0.53.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
