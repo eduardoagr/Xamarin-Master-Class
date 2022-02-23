@@ -17,7 +17,7 @@
     </intent>
   </queries>
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="Budget.Android" android:theme="@style/MainTheme">
-    <provider android:name="androidx.core.content.FileProvider" android:authorities="com.companyname.budget.fileprovider" android:exported="false" android:grantUriPermissions="true">
+    <provider android:name="androidx.core.content.FileProvider" android:authorities="com.companyname.budget.provider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/fille_provider_paths" />
     </provider>
     <activity android:name="crc640022c881947a1fd5.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="Budget" android:theme="@style/MainTheme">

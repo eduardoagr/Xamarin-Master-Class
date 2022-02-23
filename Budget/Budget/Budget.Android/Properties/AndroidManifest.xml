@@ -3,7 +3,7 @@
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
 	<application android:label="Budget.Android" android:theme="@style/MainTheme">
 		<provider android:name="androidx.core.content.FileProvider"
-						android:authorities="com.companyname.budget.fileprovider"
+						android:authorities="com.companyname.budget.provider"
                         android:exported="false"
 			            android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS"

@@ -42,6 +42,10 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
+            "Plugin.NetStandardStorage": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
             "Syncfusion.Licensing": {
               "target": "Package",
               "version": "[19.4.0.53, )"
@@ -115,6 +119,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Plugin.NetStandardStorage": {
+              "target": "Package",
+              "version": "[1.0.7, )"
             },
             "PropertyChanged.Fody": {
               "target": "Package",

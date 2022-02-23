@@ -50,6 +50,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Plugin.NetStandardStorage": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
             "PropertyChanged.Fody": {
               "target": "Package",
               "version": "[3.4.0, )"

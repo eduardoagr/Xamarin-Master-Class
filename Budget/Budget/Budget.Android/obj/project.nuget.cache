@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "VpCQZkKEPQRyE+Uesz9Npp3DFOjxXLTeB8e+qIKhFVsZD7+KitrBvrCkc8szW1BQJqpTrI/xt+hwyeIWLdSuaQ==",
+  "dgSpecHash": "5JCXy+GqzP3XILxblTaYCUhKTsCaIAhUe/OGaFq8E9SZOPZevLLRSlua7YM/QMjzPVaBX+f4AQFaL5TfB3gAWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\egome\\source\\repos\\Xamarin-Master-Class\\Budget\\Budget\\Budget.Android\\Budget.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egome\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\plugin.netstandardstorage\\1.0.7\\plugin.netstandardstorage.1.0.7.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",

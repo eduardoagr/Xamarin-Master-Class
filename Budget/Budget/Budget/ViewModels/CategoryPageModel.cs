@@ -2,7 +2,9 @@
 using Budget.Model;
 using Budget.Services;
 
+using System;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 
 using Xamarin.Forms;
@@ -63,9 +65,20 @@ namespace Budget.ViewModels {
 
         public void ShareReport() {
 
+            var localFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+            var file = Path.Combine(localFolder, "Reports.txt");
+
+            using (StreamWriter writer = new StreamWriter(Path.GetFullPath(file))) {
+
+                foreach (var ce in CategoryExpenses) {
+
+                    writer.WriteLine($"{ce.Category} - {ce.Porcentage}");
+                }
+            }
             var share = DependencyService.Get<IShare>();
 
-            share.Show("", "", "");
+            share.Show("Expense report", "Here is your report", file);
         }
     }
 }

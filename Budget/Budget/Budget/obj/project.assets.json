@@ -32,6 +32,17 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Plugin.NetStandardStorage/1.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.4/Plugin.NetStandardStorage.Abstractions.dll": {},
+          "lib/netstandard1.4/Plugin.NetStandardStorage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Plugin.NetStandardStorage.Abstractions.dll": {},
+          "lib/netstandard1.4/Plugin.NetStandardStorage.dll": {}
+        }
+      },
       "PropertyChanged.Fody/3.4.0": {
         "type": "package",
         "dependencies": {
@@ -502,6 +513,25 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Plugin.NetStandardStorage/1.0.7": {
+      "sha512": "Lo3l55Bz5AfySadlCNQowh/pz/x4jAipDqgGHFRSBvKQmrRb1a5Vv6IgS3t9cWAgf2lvwmz0F2F5QhstXK2qhg==",
+      "type": "package",
+      "path": "plugin.netstandardstorage/1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.NetStandardStorage.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.NetStandardStorage.dll",
+        "lib/Xamarin.iOS10/Plugin.NetStandardStorage.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.NetStandardStorage.dll",
+        "lib/netstandard1.4/Plugin.NetStandardStorage.Abstractions.dll",
+        "lib/netstandard1.4/Plugin.NetStandardStorage.dll",
+        "lib/uap10/Plugin.NetStandardStorage.Abstractions.dll",
+        "lib/uap10/Plugin.NetStandardStorage.dll",
+        "plugin.netstandardstorage.1.0.7.nupkg.sha512",
+        "plugin.netstandardstorage.nuspec"
       ]
     },
     "PropertyChanged.Fody/3.4.0": {
@@ -1322,6 +1352,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Plugin.NetStandardStorage >= 1.0.7",
       "PropertyChanged.Fody >= 3.4.0",
       "Syncfusion.Licensing >= 19.4.0.53",
       "Syncfusion.Xamarin.SfNumericTextBox >= 19.4.0.53",
@@ -1381,6 +1412,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.NetStandardStorage": {
+            "target": "Package",
+            "version": "[1.0.7, )"
           },
           "PropertyChanged.Fody": {
             "target": "Package",

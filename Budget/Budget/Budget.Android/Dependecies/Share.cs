@@ -19,7 +19,7 @@ namespace Budget.Droid.Dependecies {
             var intent = new Intent(Intent.ActionSend);
             intent.SetType("text/plain");
             var documentUri = FileProvider.GetUriForFile(Android.App.Application.Context,
-                "com.companyname.budget",
+                "com.companyname.budget.provider",
                 new Java.IO.File(filePath));
 
             intent.PutExtra(Intent.ExtraStream, documentUri);

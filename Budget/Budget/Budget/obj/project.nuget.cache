@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Tc9Frh7ekYwAsiScbj6kkArS1PXvZQnefCE2nU/85miT2dGDNkRslB884VbRsI/Yo0pNylLubGdeE3W520//IA==",
+  "dgSpecHash": "j0opSzYwNgi9CmPwE2eLAcqD3Xsdcet5P97BZlKa+InvDw29HA9vzC7/ZdrObBa6rc6QBYJ1SKkIHQfsbq+deA==",
   "success": true,
   "projectFilePath": "C:\\Users\\egome\\source\\repos\\Xamarin-Master-Class\\Budget\\Budget\\Budget\\Budget.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\egome\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\egome\\.nuget\\packages\\plugin.netstandardstorage\\1.0.7\\plugin.netstandardstorage.1.0.7.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\egome\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
