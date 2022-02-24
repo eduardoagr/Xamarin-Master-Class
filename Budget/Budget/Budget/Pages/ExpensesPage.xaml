@@ -30,7 +30,7 @@
 
 
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding Exenpses}">
+        <ListView ItemsSource="{Binding Expenses}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Detail="{Binding Catergory}" Text="{Binding Name}" />

@@ -127,9 +127,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Plugin.NetStandardStorage">
-      <Version>1.0.7</Version>
-    </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
       <Version>19.4.0.53</Version>
     </PackageReference>

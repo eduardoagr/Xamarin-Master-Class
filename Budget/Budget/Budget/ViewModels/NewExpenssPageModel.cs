@@ -12,7 +12,7 @@ namespace Budget.ViewModels {
     [AddINotifyPropertyChangedInterface]
     public class NewExpenssPageModel {
 
-        public Exenpse Exenpse { get; set; }
+        public Expense Exenpse { get; set; }
 
         public ObservableCollection<string> Categories { get; set; }
 
@@ -27,7 +27,7 @@ namespace Budget.ViewModels {
             Categories = new ObservableCollection<string>();
             GetCategories();
 
-            Exenpse = new Exenpse();
+            Exenpse = new Expense();
         }
 
 

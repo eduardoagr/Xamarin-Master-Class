@@ -54,9 +54,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Plugin.NetStandardStorage">
-      <Version>1.0.7</Version>
-    </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
       <Version>19.4.0.53</Version>
     </PackageReference>
@@ -74,8 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomRenders\CustomCollectionView.cs" />
-    <Compile Include="CustomRenders\CustomListViewCell.cs" />
     <Compile Include="CustomRenders\CustomProgressBar.cs" />
+    <Compile Include="CustomRenders\CustomTextCell.cs" />
     <Compile Include="Dependecies\Share.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

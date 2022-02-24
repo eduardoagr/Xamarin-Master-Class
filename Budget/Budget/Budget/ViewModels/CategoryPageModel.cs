@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Budget.ViewModels {
@@ -65,7 +66,7 @@ namespace Budget.ViewModels {
 
         public void ShareReport() {
 
-            var localFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var localFolder = FileSystem.AppDataDirectory;
 
             var file = Path.Combine(localFolder, "Reports.txt");
 
@@ -73,7 +74,7 @@ namespace Budget.ViewModels {
 
                 foreach (var ce in CategoryExpenses) {
 
-                    writer.WriteLine($"{ce.Category} - {ce.Porcentage}");
+                    writer.WriteLine($"{ce.Category} - {ce.Porcentage}$");
                 }
             }
             var share = DependencyService.Get<IShare>();

@@ -5,8 +5,6 @@ public class MonoPackageManager_Resources {
 		"Budget.Android.dll",
 		"Budget.dll",
 		"FormsViewGroup.dll",
-		"Plugin.NetStandardStorage.Abstractions.dll",
-		"Plugin.NetStandardStorage.dll",
 		"PropertyChanged.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

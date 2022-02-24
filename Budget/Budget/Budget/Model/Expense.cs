@@ -8,7 +8,7 @@ using System;
 namespace Budget.Model {
 
     [AddINotifyPropertyChangedInterface]
-    public class Exenpse {
+    public class Expense {
 
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
@@ -24,6 +24,6 @@ namespace Budget.Model {
 
         public string Catergory { get; set; }
 
-        public Exenpse() { }
+        public Expense() { }
     }
 }

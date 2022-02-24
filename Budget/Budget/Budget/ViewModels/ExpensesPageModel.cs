@@ -15,11 +15,11 @@ namespace Budget.ViewModels {
 
         public Command NewExpense { get; set; }
 
-        public ObservableCollection<Exenpse> Exenpses { get; set; }
+        public ObservableCollection<Expense> Expenses { get; set; }
 
         public ExpensesPageModel() {
 
-            Exenpses = new ObservableCollection<Exenpse>();
+            Expenses = new ObservableCollection<Expense>();
 
             NewExpense = new Command(NewExpenseAction);
 
@@ -33,9 +33,9 @@ namespace Budget.ViewModels {
         private void GetExpenses() {
             var expense = Database.GetExpenses();
 
-            Exenpses.Clear();
+            Expenses.Clear();
             foreach (var ex in expense) {
-                Exenpses.Add(ex);
+                Expenses.Add(ex);
             }
         }
 

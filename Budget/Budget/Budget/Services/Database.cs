@@ -9,21 +9,21 @@ namespace Budget.Services {
 
     public class Database {
 
-        public static int InsertExpense(Exenpse exenpse) {
+        public static int InsertExpense(Expense exenpse) {
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
 
-                conn.CreateTable<Exenpse>();
+                conn.CreateTable<Expense>();
                 return conn.Insert(exenpse);
             }
         }
 
-        public static List<Exenpse> GetExpenses() {
+        public static List<Expense> GetExpenses() {
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
 
-                conn.CreateTable<Exenpse>();
-                return conn.Table<Exenpse>().ToList();
+                conn.CreateTable<Expense>();
+                return conn.Table<Expense>().ToList();
             }
         }
 
@@ -31,17 +31,17 @@ namespace Budget.Services {
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
 
-                conn.CreateTable<Exenpse>();
-                return conn.Table<Exenpse>().ToList().Sum(e => e.Ammount);
+                conn.CreateTable<Expense>();
+                return conn.Table<Expense>().ToList().Sum(e => e.Ammount);
             }
         }
 
-        public static List<Exenpse> GetExpenses(string Category) {
+        public static List<Expense> GetExpenses(string Category) {
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatbasePath)) {
 
-                conn.CreateTable<Exenpse>();
-                return conn.Table<Exenpse>().Where(e => e.Catergory == Category).ToList();
+                conn.CreateTable<Expense>();
+                return conn.Table<Expense>().Where(e => e.Catergory == Category).ToList();
             }
         }
     }
