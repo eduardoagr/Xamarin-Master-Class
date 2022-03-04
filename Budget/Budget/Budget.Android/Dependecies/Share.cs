@@ -22,9 +22,9 @@ namespace Budget.Droid.Dependecies {
                 "com.companyname.budget.provider",
                 new Java.IO.File(filePath));
 
-            intent.PutExtra(Intent.ExtraStream, documentUri);
             intent.PutExtra(Intent.ExtraText, title);
             intent.PutExtra(Intent.ExtraSubject, messge);
+            intent.PutExtra(Intent.ExtraStream, documentUri);
 
             var chooserIntent = Intent.CreateChooser(intent, title);
             chooserIntent.SetFlags(ActivityFlags.GrantReadUriPermission);
